@@ -81,8 +81,8 @@ jobs:
       - name: Stage server build output
         run: |
           rm -rf server/.deploy
-          mkdir -p server/.deploy
-          cp -R server/dist server/.deploy/dist
+          mkdir -p server/.deploy/dist
+          cp -R server/dist/. server/.deploy/dist/
           cp server/package.json server/pnpm-lock.yaml server/pnpm-workspace.yaml server/README.md server/.gitignore server/.deploy/
 
       - name: Publish server build to server-build
