@@ -3,4 +3,3 @@ data/
 dist/
 .env
 .DS_Store
-ecosystem.config.js
