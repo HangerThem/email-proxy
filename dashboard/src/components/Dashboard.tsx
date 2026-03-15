@@ -181,7 +181,7 @@ export function Dashboard() {
     <>
       <div className="relative min-h-screen overflow-x-hidden bg-bg font-sans text-[14px] leading-[1.5] text-text">
         <div className="pointer-events-none fixed inset-0 z-[9999] bg-[repeating-linear-gradient(0deg,transparent,transparent_2px,rgba(0,0,0,0.03)_2px,rgba(0,0,0,0.03)_4px)]"></div>
-        <div className="relative grid h-screen grid-cols-[220px_1fr] grid-rows-[48px_1fr] max-[900px]:grid-cols-1 max-[900px]:grid-rows-[auto_1fr]">
+        <div className="relative grid h-dvh grid-cols-1 grid-rows-[auto_1fr] lg:grid-cols-[220px_1fr] lg:grid-rows-[48px_1fr]">
           <Topbar
             envLabel={envLabel}
             versionInfo={versionInfo}
@@ -199,7 +199,7 @@ export function Dashboard() {
             onChangeView={handleChangeView}
           />
 
-          <main className="flex flex-col gap-6 overflow-y-auto px-8 py-7 max-[900px]:px-5 max-[900px]:py-5">
+          <main className="flex flex-col gap-6 overflow-y-auto px-4 py-4 sm:px-5 sm:py-5 lg:px-8 lg:py-7">
             <OverviewView
               visible={activeView === "overview"}
               isConnected={isConnected}

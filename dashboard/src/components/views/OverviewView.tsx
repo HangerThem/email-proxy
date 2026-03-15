@@ -72,14 +72,14 @@ export function OverviewView({
         title="Overview"
         subtitle="Multi-tenant Email Proxy"
         action={
-          <Button onClick={onOpenAddModal}>
+          <Button className="w-full justify-center sm:w-auto" onClick={onOpenAddModal}>
             <Plus size={14} />
             New Site
           </Button>
         }
       />
 
-      <div className="grid grid-cols-4 gap-3 max-[900px]:grid-cols-2">
+      <div className="grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
         <div className={statCardClass}>
           <div className={statLabelClass}>Total Sites</div>
           <div className={statValueClass}>{sites.length}</div>

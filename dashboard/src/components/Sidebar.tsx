@@ -16,7 +16,7 @@ export function Sidebar({ activeView, siteCount, onChangeView }: SidebarProps) {
     )
 
   return (
-    <nav className="flex flex-col gap-0.5 border-r border-border bg-surface py-4 max-[900px]:hidden">
+    <nav className="hidden flex-col gap-0.5 border-r border-border bg-surface py-4 lg:flex">
       <div className="px-4 pb-1 pt-2 font-mono text-[10px] uppercase tracking-[0.1em] text-textMute">
         Navigation
       </div>

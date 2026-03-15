@@ -51,7 +51,7 @@ export function SitesView({
         title="Sites"
         subtitle="Manage per-site SMTP config and API keys"
         action={
-          <Button onClick={onOpenAddModal}>
+          <Button className="w-full justify-center sm:w-auto" onClick={onOpenAddModal}>
             <Plus size={14} />
             New Site
           </Button>

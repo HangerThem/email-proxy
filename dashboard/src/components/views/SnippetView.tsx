@@ -42,7 +42,7 @@ export function SnippetView({
           <CardTitle>Configure</CardTitle>
         </CardHeader>
 
-        <div className="gap-3 p-5">
+        <div className="grid gap-3 p-4 sm:p-5">
           <Field>
             <FieldLabel>Site API Key</FieldLabel>
             <Select

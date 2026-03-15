@@ -77,7 +77,7 @@ export function LogsView({
           <CardTitle>Select site</CardTitle>
         </CardHeader>
 
-        <div className="flex items-center gap-2.5 px-5 py-4">
+        <div className="flex flex-col gap-3 px-4 py-4 sm:flex-row sm:items-end sm:px-5">
           <Select
             options={sites.map((site) => ({
               label: site.name,
@@ -87,11 +87,11 @@ export function LogsView({
             value={selectedSiteId}
             onChange={(value) => onSelectedSiteChange(value as string)}
             placeholder="Select a site"
-            className="max-w-96"
+            className="w-full sm:max-w-96"
           />
 
           <Select
-            className="w-20"
+            className="w-full sm:w-24"
             value={String(limit)}
             options={limitOptions}
             onChange={(value) =>
@@ -104,6 +104,7 @@ export function LogsView({
             size="sm"
             onClick={onLoad}
             disabled={!selectedSiteId || isLoading}
+            className="w-full justify-center sm:w-auto"
           >
             Load
           </Button>
@@ -125,7 +126,7 @@ export function LogsView({
             <tbody>
               {isLoading ? (
                 <tr>
-                  <td colSpan={7} className="px-5 py-5 text-center">
+                  <td colSpan={7} className="px-3 py-5 text-center sm:px-5">
                     <Spinner size="sm" className="mx-auto" />
                   </td>
                 </tr>
@@ -177,7 +178,7 @@ export function LogsView({
           </DataTable>
         </div>
 
-        <div className="flex flex-col items-center gap-4 px-5 py-3 text-xs text-textDim">
+        <div className="flex flex-col items-center gap-4 px-4 py-3 text-xs text-textDim sm:px-5">
           {totalLogsCount !== null && (
             <span>
               Showing {rows.length} of {totalLogsCount} logs

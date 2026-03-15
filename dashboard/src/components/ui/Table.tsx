@@ -21,7 +21,7 @@ export function TableHeadCell({
   return (
     <th
       className={cn(
-        "sticky top-0 z-10 whitespace-nowrap border-b border-border bg-surface px-5 py-2.5 text-left font-mono text-[10px] uppercase tracking-[0.1em] text-textMute",
+        "sticky top-0 z-10 whitespace-nowrap border-b border-border bg-surface px-3 py-2 text-left font-mono text-[10px] uppercase tracking-[0.1em] text-textMute sm:px-5 sm:py-2.5",
         className,
       )}
       {...props}
@@ -36,7 +36,7 @@ export function TableCell({
   return (
     <td
       className={cn(
-        "border-b border-border px-5 py-3 align-middle font-mono text-[12px]",
+        "border-b border-border px-3 py-2.5 align-middle font-mono text-[12px] sm:px-5 sm:py-3",
         className,
       )}
       {...props}
@@ -59,7 +59,7 @@ export function EmptyTableCell({
   return (
     <td
       className={cn(
-        "px-5 py-12 text-center font-mono text-[12px] text-textMute",
+        "px-3 py-12 text-center font-mono text-[12px] text-textMute sm:px-5",
         className,
       )}
       {...props}

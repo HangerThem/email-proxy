@@ -13,7 +13,7 @@ function WithAuth() {
 
   if (loading) {
     return (
-      <div className="flex flex-col min-h-screen items-center justify-center bg-bg">
+      <div className="flex min-h-dvh flex-col items-center justify-center bg-bg px-4">
         <Spinner />
       </div>
     )

@@ -18,7 +18,7 @@ export function CardHeader({
   return (
     <div
       className={cn(
-        "flex items-center justify-between border-b border-border px-5 py-3.5",
+        "flex items-center justify-between border-b border-border px-4 py-3 sm:px-5 sm:py-3.5",
         className,
       )}
       {...props}

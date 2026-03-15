@@ -8,10 +8,10 @@ export function Auth() {
     useAdminApi()
 
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center bg-bg">
-      <div className="relative flex justify-center">
-        <div className="absolute -top-16 flex items-center gap-2 font-mono text-3xl font-semibold tracking-[0.04em] text-white">
-          <span className="h-3 w-3 rounded-full bg-accent shadow-[0_0_8px_#1877f2] animate-pulseDot"></span>
+    <div className="flex min-h-dvh flex-col items-center justify-center bg-bg px-4 py-10">
+      <div className="relative flex w-full justify-center">
+        <div className="absolute -top-12 flex items-center gap-2 font-mono text-2xl font-semibold tracking-[0.04em] text-white sm:-top-16 sm:text-3xl">
+          <span className="h-2.5 w-2.5 animate-pulseDot rounded-full bg-accent shadow-[0_0_8px_#1877f2] sm:h-3 sm:w-3"></span>
           EMAIL_PROXY
         </div>
 
@@ -20,7 +20,7 @@ export function Auth() {
             <CardTitle>Login</CardTitle>
           </CardHeader>
 
-          <div className="space-y-6 p-6">
+          <div className="space-y-6 p-5 sm:p-6">
             <TextInput
               placeholder="Proxy URL (e.g. https://api.example.com)"
               type="url"
