@@ -6,7 +6,7 @@
  */
 
 type EmailSendPayload = {
-  to: string
+  to?: string
   subject: string
   text: string
   html?: string
@@ -114,12 +114,11 @@ interface SendResponseBody {
     const replyTo =
       replyToRaw && replyToRaw.trim().length > 0 ? replyToRaw.trim() : undefined
 
-    if (!to) throw new Error("to is required")
     if (!subject) throw new Error("subject is required")
     if (!text) throw new Error("text is required")
 
     return {
-      to,
+      ...(to ? { to } : {}),
       subject,
       text,
       ...(html ? { html } : {}),
